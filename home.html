@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Friends</title>
+
+    <!-- Link Google Fonts for beautiful fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="material/css/styles.css">
+    <link rel="stylesheet" href="material/css/st.css">
+
+
+
+
+
+
+
+
+
+
+<ye css code task complete honey k baad jo check mark aata hai us ka hai>
+<style>
+.task-completed.checkmark {
+    color: #E2F516;
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="font-family: 'Roboto', sans-serif; font-size: 32px; color: white; margin-top: 20px; font-weight: 600;">
+    Free AirDrop Every Month <br><align="left">Don't<font color="#00BFFF"> Miss Out!</font></align="left">
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task with Telegram Tracking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Task Container Styles */
+        .task-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .task-container img {
+            width: 50px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 32px;
+            color: white;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        /* Styling for the Button */
+        .task-button {
+            background-color: #00BFFF;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .task-button:disabled {
+            background-color: #cccccc; /* Gray color for disabled button */
+            cursor: not-allowed; /* Show not-allowed cursor */
+            opacity: 0.6; /* Dim effect */
+        }
+
+        /* Hide the checkmark initially */
+        .task-completed {
+            display: none;
+        }
+
+        /* Checkmark styling */
+        .checkmark {
+            font-size: 30px;
+            color: #00BFFF;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+  
+
+
+
+
+<!-- Task Section (Logo, Text, Button) -->
+<div class="task-container">
+    <div class="task" id="task1">
+        <div class="task-detail">
+            <div class="task-image">
+                <img src="material/images/you.png" width="45px" alt="Task Image">
+            </div>
+            <div>
+                <h4>Join Channel</h4>
+                <div class="task-data">
+                   <font color="white"><b> 🟡2000 </b></font color="#00BFFF">
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Button with Tracking Function -->
+        <button class="task-button" style="background-color: #E2F516; color: black;" id="startButton-task1" 
+                onclick="completeTaskWithTracking('task1', 'https://youtube.com')">
+            Start
+        </button>
+
+        <!-- Task Completed Checkmark -->
+        <span id="taskCompleted-task1" class="task-completed checkmark" style="display: none;">
+            <i class="fas fa-check-circle"></i>
+        </span>
+    </div>
+</div>
+
+<!-- Another Task for Testing -->
+<div class="task-container">
+    <div class="task" id="task2">
+        <div class="task-detail">
+            <div class="task-image">
+                <img src="material/images/tele.png" width="45px" alt="Task Image">
+            </div>
+            <div>
+                <h4>Join Telegram</h4>
+                <div class="task-data">
+             <font color="white"><b>  🟡2000 </b></font color="#00BFFF">
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Button with Tracking Function -->
+        <button class="task-button" style="background-color: #E2F516; color: black;" id="startButton-task2" 
+                onclick="completeTaskWithTracking('task2', 'https://t.me/sirepaw')">
+            Start
+        </button>
+
+        <!-- Task Completed Checkmark -->
+        <span id="taskCompleted-task2" class="task-completed checkmark" style="display: none;">
+            <i class="fas fa-check-circle"></i>
+        </span>
+    </div>
+</div>
+
+<script>
+    // Function to handle button click, redirect to Telegram, and track completion for a specific task
+    function completeTaskWithTracking(taskId, telegramLink) {
+        // Redirect to Telegram channel
+        window.open(telegramLink, '_blank');
+
+        // Simulate the tracking of user joining the channel
+        setTimeout(function () {
+            // Hide the Start button for the specific task
+            const startButton = document.getElementById(`startButton-${taskId}`);
+            const taskCompleted = document.getElementById(`taskCompleted-${taskId}`);
+
+            if (startButton && taskCompleted) {
+                startButton.style.display = 'none'; // Hide the Start button
+                taskCompleted.style.display = 'inline'; // Show the checkmark
+                taskCompleted.innerHTML = '<i class="fas fa-check-circle"></i>';
+            } else {
+                console.error(`Elements not found for taskId: ${taskId}`);
+            }
+        }, 3000); // Simulate a 3-second wait for task completion
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="coin-container">
+            <div class="task-image">
+                <img src="material/images/logo.png" width="10%"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Navigation bar customization>
+<!-- Navigation Bar color style tag k andar head k neachey paste krna hota hai ye code  --> 
+ 
+
+
+ <style>
+        .bottom-nav {
+            background-color: #222; /
+
+        }
+    </style>
+
+
+
+<!-- Navigation Bar ki height style tag k andar head k neachey paste krna hota hai ye code  --> 
+
+
+<style>
+.bottom-nav {
+    height: 65px; /
+}</style>
+
+
+
+
+<!-- Navigation Bar par mojood icon ka size kam zyada karney k liye darj zail  style tag k andar head k neachey paste krna hota hai ye code  --> 
+
+
+
+
+ <style>
+        .nav-item i {
+            font-size: 21px; /
+        }
+    </style>
+<Navigation bar customization>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+
+                
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="material/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000; 
+            color: #fff; 
+            margin: 0;
+            padding: 0;
+        }
+
+        #balance-container {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .task-container {
+            margin: 10px auto;
+            max-width: 600px;
+        }
+
+        .task {
+            margin: 10px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #000000; 
+            border-radius: 12px;
+            background-color: #333030; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            width: 80%;
+        }
+
+        .task:hover {
+            transform: translateY(-5px);
+        }
+
+        .task-detail {
+            display: flex;
+            align-items: center;
+        }
+
+        .task-image img {
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .task h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #f2f2f2;
+        }
+
+        .task-data {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .task-data img {
+            margin-right: 5px;
+        }
+
+        .task-data h5 {
+            margin: 0;
+            color: #ffcc00;
+            font-size: 18px;
+        }
+
+        .task-button {
+            background-color: #ffffff; 
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .task-button:hover {
+            background-color: #a2aaa0;
+        }
+
+        @media (max-width: 600px) {
+            .task-container {
+                max-width: 100%;
+            }
+
+            .task-button {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .task h4 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="font-family: 'Roboto', sans-serif; font-size: 20px; color: white; margin-top: 20px; font-weight: 500;">
+    Complete as many tasks<br> as you can to collect more<br> tokens, and you'll receive your <br>airdrop at the end of <br>every<font color="#00BFFF"> month</font>!
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+   
+
+   
+
+
+
+
+
+
+
+
+<h2 style="font-family: 'Roboto', sans-serif; font-size: 40px; color: white; margin-top: 20px; font-weight: 500;">
+    AirDrop Date
+</h2>
+
+
+
+
+
+<h2 style="font-family: 'Roboto', sans-serif; font-size: 16px; color: white; margin-top: 20px; font-weight: 500;">
+    Get ready to claim your rewards!<br> At the end of every month, we<br> distribute exclusive airdrops to<br> our members.<br> <br>The more tasks you complete,<br> the higher your chances of<br> earning big! <br><br> Don't miss out on this golden <br>opportunity to collect free<br> tokens and be part of <br>something exciting. <br><br>Start now and<br> secure your share today!
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <br><br> <br><br> <br><br>
+
+
+
+  <script src="material/js/js.js"></script>
+    <script src="material/js/main.js"></script>
+
+
+ <!-- Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>HOME</span>
+        </a>
+        <a href="leaderboard.html" class="nav-item">
+            <i class="fas fa-trophy"></i>
+            <span>LEADERBOARD</span>
+        </a>
+        <a href="invite-friends.html" class="nav-item">
+            <i class="fas fa-user-friends"></i>
+            <span>FRIENDS</span>
+        </a>
+        <a href="task.html" class="nav-item">
+            <i class="fas fa-tasks"></i>
+            <span>TASKS</span>
+        </a>
+        <a href="balance.html" class="nav-item">
+            <i class="fas fa-wallet"></i>
+            <span>BALANCE</span>
+        </a>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <style>
+        .bottom-nav {
+            background-color: #222; /
+
+        }
+    </style>
+
+
+
+<!-- Navigation Bar ki height style tag k andar head k neachey paste krna hota hai ye code  --> 
+
+
+<style>
+.bottom-nav {
+    height: 65px; /
+}</style>
+
+
+
+
+<!-- Navigation Bar par mojood icon ka size kam zyada karney k liye darj zail  style tag k andar head k neachey paste krna hota hai ye code  --> 
+
+
+
+
+ <style>
+        .nav-item i {
+            font-size: 21px; /
+        }
+    </style>
+<Navigation bar customization>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
