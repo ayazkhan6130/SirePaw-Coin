@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="material/css/styles.css">
+    
+
+
+
+
+
+
+<Navigation bar customization>
+<!-- Navigation Bar color style tag k andar head k neachey paste krna hota hai ye code  --> 
+ 
+
+
+ <style>
+        .bottom-nav {
+            background-color: #222; /
+
+        }
+    </style>
+
+
+
+<!-- Navigation Bar ki height style tag k andar head k neachey paste krna hota hai ye code  --> 
+
+
+<style>
+.bottom-nav {
+    height: 65px; /
+}</style>
+
+
+
+
+<!-- Navigation Bar par mojood icon ka size kam zyada karney k liye darj zail  style tag k andar head k neachey paste krna hota hai ye code  --> 
+
+
+
+
+ <style>
+        .nav-item i {
+            font-size: 21px; /
+        }
+    </style>
+<Navigation bar customization>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raleway Font Example</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .raleway-text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 32px;
+            font-weight: 600; /* Semi-bold */
+            color: white;
+            margin-top: 20px;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000; 
+            color: #fff; 
+            margin: 0;
+            padding: 0;
+        }
+
+        #balance-container {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .task-container {
+            margin: 10px auto;
+            max-width: 600px;
+        }
+
+        .task {
+            margin: 10px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #000000; 
+            border-radius: 12px;
+            background-color: #333030; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            width: 80%;
+        }
+
+        .task:hover {
+            transform: translateY(-5px);
+        }
+
+        .task-detail {
+            display: flex;
+            align-items: center;
+        }
+
+        .task-image img {
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .task h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #f2f2f2;
+        }
+
+        .task-data {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .task-data img {
+            margin-right: 5px;
+        }
+
+        .task-data h5 {
+            margin: 0;
+            color: #ffcc00;
+            font-size: 18px;
+        }
+
+        .task-button {
+            background-color: #ffffff; 
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .task-button:hover {
+            background-color: #a2aaa0;
+        }
+        .tasks.scrollable {
+            max-height: 590px; 
+            overflow-y: auto; 
+            margin: 20px auto;
+            width: 90%;       
+            padding-right: 10px;
+            border: 1px solid #000000; 
+        }
+        @media (max-width: 600px) {
+            .task-container {
+                max-width: 100%;
+            }
+
+            .task-button {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .task h4 {
+                font-size: 16px;
+            }
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="balance-container">
+        <h2><b></b></h2>
+
+    <h2 style="font-family: 'Roboto', sans-serif; font-size: 25px; color: white; margin-top: 20px; font-weight: 600;">
+        TOTAL SIREPAWS
+    </h2>
+
+<h2 style="font-family: 'Raleway', sans-serif; font-size: 60px; color: white; margin-top: 20px; font-weight: 600;">
+       
+    
+       <span id="balance">0</span>
+    </div>
+   
+</h2>
+
+<br><br>
+<h2 style="font-family: 'poppins', sans-serif; font-size: 20px; color: white; margin-top: 20px; font-weight: 500;">
+       Stay on the task for at least <br> 10 seconds to Unlock your <br> reward!💲💵
+    </h2>
+
+
+
+
+<h2 style="font-family: 'Raleway', sans-serif; font-size: 42px; color: white; margin-top: 20px; font-weight: 600;">
+    Daily Tasks
+</h2>
+
+
+
+
+
+
+
+    <section class="tasks scrollable">
+    <div class="task-container">
+        <div class="task">
+            <div class="task-detail">
+                <div class="task-image">
+                    <img src="material/images/you.png" width="45px" alt="">
+                </div>
+                <div>
+                    <h4>Subscribe</h4>
+                    <div class="task-data">
+                         <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                            <h5>1000</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="task-button" data-task-id="task1" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+
+
+
+
+
+        </div>
+    
+        <div class="task-container">
+            <div class="task">
+                <div class="task-detail">
+                    <div class="task-image">
+                        <img src="material/images/tele.png" width="45px" alt="">
+                    </div>
+                    <div>
+                        <h4>Subscribe</h4>
+                        <div class="task-data">
+                            <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                            <h5>1000</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="task-button" data-task-id="task2" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+            </div>
+            <div class="task-container">
+                <div class="task">
+                    <div class="task-detail">
+                        <div class="task-image">
+                            <img src="material/images/fa.png" width="45px" alt="">
+                        </div>
+                        <div>
+                            <h4>follow</h4>
+                            <div class="task-data">
+                                <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                                <h5>1000</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="task-button" data-task-id="task3" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+                </div>
+                <div class="task-container">
+                    <div class="task">
+                        <div class="task-detail">
+                            <div class="task-image">
+                                <img src="material/images/ista.png" width="45px" alt="">
+                            </div>
+                            <div>
+                                <h4>follow</h4>
+                                <div class="task-data">
+                                    <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                                    <h5>1000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="task-button" data-task-id="task4" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+                    </div>
+                    <div class="task-container">
+                        <div class="task">
+                            <div class="task-detail">
+                                <div class="task-image">
+                                    <img src="material/images/you.png" width="45px" alt="">
+                                </div>
+                                <div>
+                                    <h4>watch video</h4>
+                                    <div class="task-data">
+                                        <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                                        <h5>1000</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="task-button" data-task-id="task5" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+                        </div>
+
+                        <div class="task-container">
+                            <div class="task">
+                                <div class="task-detail">
+                                    <div class="task-image">
+                                        <img src="material/images/tele.png" width="45px" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Subscribe</h4>
+                                        <div class="task-data">
+                                            <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                                            <h5>1000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="task-button" data-task-id="task6" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+                            </div>
+                            <div class="task-container">
+                                <div class="task">
+                                    <div class="task-detail">
+                                        <div class="task-image">
+                                            <img src="material/images/fa.png" width="45px" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>follow</h4>
+                                            <div class="task-data">
+                                                <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                                                <h5>1000</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="task-button" data-task-id="task7" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+                                </div>
+                                <div class="task-container">
+                                    <div class="task">
+                                        <div class="task-detail">
+                                            <div class="task-image">
+                                                <img src="material/images/ista.png" width="45px" alt="">
+                                            </div>
+                                            <div>
+                                                <h4>follow</h4>
+                                                <div class="task-data">
+                                                    <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                                                    <h5>1000</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="task-button" data-task-id="task8" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+                                    </div>
+                                    <div class="task-container">
+                                        <div class="task">
+                                            <div class="task-detail">
+                                                <div class="task-image">
+                                                    <img src="material/images/you.png" width="45px" alt="">
+                                                </div>
+                                                <div>
+                                                    <h4>watch video</h4>
+                                                    <div class="task-data">
+                                                        <img src="material/images/logo.png" width="20px" alt="Coin Icon">
+                                                        <h5>100</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="task-button" data-task-id="task9" style="background-color: #00BFFF; color: white; style="background-color: #00BFFF; color: white; onclick="completeTaskWithTracking(100, 'https://medicarepulseinsurance.com')">Start</button>
+                                        </div>
+
+                    </section>
+
+
+        <nav class="bottom-nav">
+            <a href="home.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>HOME</span>
+            </a>
+            <a href="leaderboard.html" class="nav-item">
+                <i class="fas fa-trophy"></i>
+                <span>LEADERBOARD</span>
+            </a>
+            <a href="invite-friends.html" class="nav-item">
+                <i class="fas fa-user-friends"></i>
+                <span>FRIENDS</span>
+            </a>
+            <a href="task.html" class="nav-item">
+                <i class="fas fa-tasks"></i>
+                <span>TASKS</span>
+            </a>
+            <a href="balance.html" class="nav-item">
+                <i class="fas fa-wallet"></i>
+                <span>BALANCE</span>
+            </a>
+        </nav>
+
+    <script src="material/js/js.js"></script>
+    <script src="material/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function completeTaskWithTracking(reward, taskUrl) {
+    const button = event.target; // Get the clicked button
+    const taskId = button.parentNode.querySelector('h4').innerText; // Unique task identifier
+    let taskCompleted = false; // Track if the task is completed
+
+    // Disable the button immediately to avoid multiple clicks
+    button.disabled = true;
+    button.innerText = "Loading...";
+
+    // Open the task URL in a new window/tab
+    const taskWindow = window.open(taskUrl, '_blank');
+
+    // Start a timer to track the time spent on the task window
+    const timer = setTimeout(() => {
+        if (!taskWindow.closed) {
+            // User stayed on the site for 10 seconds
+            taskCompleted = true;
+            button.innerText = "Claim";
+            button.disabled = false;
+
+            // Update the button to allow claiming the reward
+            button.onclick = () => claimReward(button, reward, taskId);
+        }
+    }, 10000); // 10 seconds in milliseconds
+
+    // Periodically check if the task window is closed
+    const windowCheckInterval = setInterval(() => {
+        if (taskWindow.closed) {
+            clearInterval(windowCheckInterval); // Stop checking
+
+            if (!taskCompleted) {
+                // User closed the window before completing the task
+                clearTimeout(timer); // Cancel the timer
+                button.innerText = "Start";
+                button.disabled = false;
+                alert("Task not completed. Please try again.");
+            }
+        }
+    }, 500); // Check every 500 milliseconds
+}
+
+function claimReward(button, reward, taskId) {
+    // Update the user's reward balance
+    const balanceElement = document.getElementById('balance');
+    const currentBalance = parseInt(balanceElement.innerText) || 0;
+    balanceElement.innerText = currentBalance + reward;
+
+    // Update the button to indicate a 2-hour cooldown
+    button.disabled = true;
+    button.style.backgroundColor = "#777";
+    button.style.color = "#ccc";
+    button.innerText = "Wait 30 seconds";
+
+    // Re-enable the button after 1 minute
+    setTimeout(() => {
+        button.disabled = false;
+        button.style.backgroundColor = "#ffffff";
+        button.style.color = "#000";
+        button.innerText = "Start";
+    }, 30000 // 30seconds
+}
+
+</script>
+
+
+
+<br><br><br><br>
+
+
+
+
+
+
+
+<ye script user ka data collect krney k liye hai, dosri save task php file hoti hai, aur tesri user data html k name se hoti hai>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let userName = "";
+        let userCountry = "Unknown"; // Default country
+        let startTime;
+
+        // Telegram username fetch karna
+        function getTelegramUserName() {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get("tg_name") || "Unknown User";
+        }
+
+        userName = getTelegramUserName();
+
+        // User ki country detect karne ke liye API call
+        fetch("https://ipapi.co/json/")
+        .then(response => response.json())
+        .then(data => {
+            userCountry = data.country_name || "Unknown";
+        });
+
+        document.querySelectorAll(".start-task").forEach(button => {
+            button.addEventListener("click", function () {
+                startTime = Date.now();
+            });
+        });
+
+        window.addEventListener("beforeunload", function () {
+            if (startTime) {
+                let timeSpent = (Date.now() - startTime) / 1000;
+
+                if (timeSpent >= 10) {
+                    fetch("save-task.php", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ name: userName, country: userCountry })
+                    });
+                }
+            }
+        });
+    });
+</script>
+
+
+
+
+
+<ye script earning aur button reset honey se bachaney k liye hai, jab user exit kar k dobara wapis aata hai to us ki earnings reset ho jati thein>
+<script>
+function completeTaskWithTracking(reward, taskUrl, button) {
+    const taskId = button.getAttribute('data-task-id'); // Unique task ID
+    let taskCompleted = false;
+
+    // Disable only the clicked button
+    button.disabled = true;
+    button.innerText = "Loading...";
+
+    // Open the task in a new tab
+    const taskWindow = window.open(taskUrl, "_blank");
+
+    // Start a timer for task completion
+    const timer = setTimeout(() => {
+        if (!taskWindow.closed) {
+            taskCompleted = true;
+            button.innerText = "Claim";
+            button.disabled = false;
+            button.onclick = () => claimReward(button, reward, taskId);
+        }
+    }, 10000); // 10 seconds
+
+    // Monitor if the user closes the task window
+    const windowCheckInterval = setInterval(() => {
+        if (taskWindow.closed) {
+            clearInterval(windowCheckInterval);
+
+            if (!taskCompleted) {
+                clearTimeout(timer);
+                button.innerText = "Start";
+                button.disabled = false;
+                alert("Task not completed. Please try again.");
+            }
+        }
+    }, 500);
+}
+
+function claimReward(button, reward, taskId) {
+    const balanceElement = document.getElementById("balance");
+    let currentBalance = parseInt(balanceElement.innerText) || 0;
+
+    // Fixed reward
+    const fixedReward = 1000;
+
+    // Update balance
+    balanceElement.innerText = currentBalance + fixedReward;
+
+    // Save reward in localStorage
+    localStorage.setItem(`taskReward_${taskId}`, fixedReward);
+
+    // Update reward display for the task
+    updateUpperTasks(taskId, fixedReward);
+
+    // Save cooldown time
+    const currentTime = new Date().getTime();
+    localStorage.setItem(`taskCooldown_${taskId}`, currentTime);
+
+    // Disable the button
+    disableButton(button, taskId);
+}
+
+function disableButton(button, taskId) {
+    button.disabled = true;
+    button.style.backgroundColor = "#777";
+    button.style.color = "#ccc";
+    button.innerText = "Wait 30 seconds";
+
+    // Enable button after cooldown
+    setTimeout(() => {
+        button.disabled = false;
+        button.style.backgroundColor = "#00BFFF";
+        button.style.color = "#fff";
+        button.innerText = "Start";
+
+        // Re-enable button functionality
+        button.onclick = function () {
+            completeTaskWithTracking(1000, "https://medicarepulseinsurance.com", button);
+        };
+
+        localStorage.removeItem(`taskCooldown_${taskId}`);
+    }, 30000); // 30 seconds
+}
+
+function updateUpperTasks(taskId, reward) {
+    const taskElement = document.querySelector(`[data-task-id="${taskId}"]`);
+
+    // Ensure task element exists
+    if (!taskElement) return;
+
+    // Check if reward text already exists
+    let rewardContainer = taskElement.querySelector(".task-reward");
+    if (!rewardContainer) {
+        rewardContainer = document.createElement("div");
+        rewardContainer.classList.add("task-reward");
+        rewardContainer.innerText = `Earned: ${reward}`;
+        taskElement.insertBefore(rewardContainer, taskElement.firstChild); // Add above the button
+    } else {
+        rewardContainer.innerText = `Earned: ${reward}`;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".task-button").forEach((button) => {
+        const taskId = button.getAttribute("data-task-id");
+        const lastClickedTime = localStorage.getItem(`taskCooldown_${taskId}`);
+
+        // Check cooldown
+        if (lastClickedTime) {
+            const elapsedTime = new Date().getTime() - parseInt(lastClickedTime);
+            if (elapsedTime < 5000) {
+                disableButton(button, taskId);
+            }
+        }
+
+        // Reassign button functionality
+        button.onclick = function () {
+            completeTaskWithTracking(1000, "https://medicarepulseinsurance.com", button);
+        };
+    });
+
+    // Load saved rewards
+    loadSavedRewards();
+});
+
+function loadSavedRewards() {
+    document.querySelectorAll("[data-task-id]").forEach((taskElement) => {
+        const taskId = taskElement.getAttribute("data-task-id");
+        const reward = localStorage.getItem(`taskReward_${taskId}`);
+        if (reward && !taskElement.querySelector(".task-reward")) {
+            const rewardContainer = document.createElement("div");
+            rewardContainer.classList.add("task-reward");
+            
+            taskElement.insertBefore(rewardContainer, taskElement.firstChild);
+        }
+    });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ye script user k data ko github main save krey gi aur user wapis aye ga to us ka data github se load ho ga> es script main github user name aur new
+api token generate kr k aur repository name file path name yani apni json file ka name update kiya hai>
+<script>
+const GITHUB_USERNAME = "ayazkhan6130";  // Apna GitHub username likhein
+const REPO_NAME = "SirePaw-Coin";  // Apni repository ka naam likhein
+const FILE_PATH = "userData.json"; // JSON file jisme data save hoga
+const GITHUB_TOKEN = "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"; // Apna GitHub Token yahan daalain
+
+const GITHUB_API_URL = `https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/contents/${FILE_PATH}`;
+
+// Function: GitHub se latest user data fetch karna
+async function fetchUserData() {
+    try {
+        const response = await fetch(GITHUB_API_URL, {
+            headers: { Authorization: `token ${GITHUB_TOKEN}` }
+        });
+
+        if (!response.ok) throw new Error("Failed to fetch data");
+
+        const data = await response.json();
+        const content = atob(data.content); // Base64 decode karein
+        return JSON.parse(content);
+    } catch (error) {
+        console.error("Error fetching user data:", error);
+        return { earnings: 0, tasks: [], cooldowns: {} }; // Default empty data
+    }
+}
+
+// Function: User data GitHub pe save karna
+async function saveUserData(userData) {
+    try {
+        const existingData = await fetchUserData(); // Pehle se maujood data lein
+        const updatedData = { ...existingData, ...userData }; // Naya data merge karein
+
+        const fileContent = btoa(JSON.stringify(updatedData, null, 2)); // JSON ko Base64 me convert karein
+
+        const response = await fetch(GITHUB_API_URL, {
+            method: "PUT",
+            headers: {
+                Authorization: `token ${GITHUB_TOKEN}`,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                message: "Updated user data",
+                content: fileContent,
+                sha: await getFileSHA()
+            })
+        });
+
+        if (!response.ok) throw new Error("Failed to save data");
+        console.log("User data successfully saved!");
+    } catch (error) {
+        console.error("Error saving user data:", error);
+    }
+}
+
+// Function: File ka SHA hash retrieve karna (Required for GitHub API)
+async function getFileSHA() {
+    try {
+        const response = await fetch(GITHUB_API_URL, {
+            headers: { Authorization: `token ${GITHUB_TOKEN}` }
+        });
+
+        if (!response.ok) throw new Error("Failed to fetch SHA");
+
+        const data = await response.json();
+        return data.sha; // File ka SHA return karein
+    } catch (error) {
+        console.error("Error fetching SHA:", error);
+        return null;
+    }
+}
+
+// Function: Page load hone par user data load karna
+async function loadUserData() {
+    const userData = await fetchUserData();
+    
+    document.getElementById("balance").innerText = userData.earnings || 0;
+
+    userData.tasks.forEach(task => {
+        const taskButton = document.querySelector(`[data-task-id="${task.id}"]`);
+        if (taskButton) {
+            taskButton.innerText = "Completed";
+            taskButton.disabled = true;
+        }
+    });
+
+    for (const taskId in userData.cooldowns) {
+        const remainingTime = userData.cooldowns[taskId] - Date.now();
+        if (remainingTime > 0) {
+            const button = document.querySelector(`[data-task-id="${taskId}"]`);
+            if (button) disableButton(button, taskId, remainingTime);
+        }
+    }
+}
+
+// Function: Task complete hone par save karna
+async function completeTask(taskId, reward) {
+    const userData = await fetchUserData();
+
+    // Earned coins update karna
+    userData.earnings = (userData.earnings || 0) + reward;
+
+    // Task add karna
+    if (!userData.tasks.some(task => task.id === taskId)) {
+        userData.tasks.push({ id: taskId, reward });
+    }
+
+    // Cooldown time set karna
+    const cooldownTime = Date.now() + 60 * 1000; // 1-minute cooldown
+    userData.cooldowns[taskId] = cooldownTime;
+
+    await saveUserData(userData);
+
+    const button = document.querySelector(`[data-task-id="${taskId}"]`);
+    if (button) disableButton(button, taskId, 60000); // Disable for 1 min
+}
+
+// Function: Button ko disable karna cooldown ke liye
+function disableButton(button, taskId, duration) {
+    button.disabled = true;
+    button.style.backgroundColor = "#777";
+    button.style.color = "#ccc";
+    button.innerText = `Wait ${Math.ceil(duration / 1000)}s`;
+
+    const interval = setInterval(() => {
+        duration -= 1000;
+        if (duration <= 0) {
+            clearInterval(interval);
+            button.disabled = false;
+            button.style.backgroundColor = "#00BFFF";
+            button.style.color = "#fff";
+            button.innerText = "Start";
+            button.onclick = () => completeTask(taskId, 1000);
+        } else {
+            button.innerText = `Wait ${Math.ceil(duration / 1000)}s`;
+        }
+    }, 1000);
+}
+
+// Function: Tasks ko manually reset karna
+async function resetTasks() {
+    await saveUserData({ earnings: 0, tasks: [], cooldowns: {} });
+    alert("All tasks reset!");
+}
+
+// Page load hone par user data fetch karein
+document.addEventListener("DOMContentLoaded", loadUserData);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<rewardContainer.innerText = `Earned: ${reward}`;>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
