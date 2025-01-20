@@ -42,13 +42,7 @@
 
 
 
-
-
-
-
-
-
-<div style="width: 250px; margin: 0 auto; background-color: black; padding: 20px; border-radius: 10px;">
+<div style="width: 300px; margin: 0 auto; background-color: green; padding: 20px; border-radius: 10px;">
     <h2 style="font-family: 'Roboto', sans-serif; font-size: 28px; color: white; font-weight: 600; text-align: left; margin: 0;">
         <b>Free AirDrop Every</b><br>
         <b><font color="#00BFFF">Month</font></b><font color="#99A3A3"> Dont miss out!
@@ -56,13 +50,6 @@
 
      </h2>
 </div>
-
-
-
-
-
-
-
 
 
 
@@ -236,9 +223,6 @@
 
   
 
-
-
-
 <!-- Task Section (Logo, Text, Button) -->
 <div class="task-container">
     <div class="task" id="task1">
@@ -254,10 +238,10 @@
             </div>
         </div>
 
-        <!-- Start Button with Tracking Function -->
-        <button class="task-button" style="background-color: #E2F516; color: black;" id="startButton-task1" 
+        <!-- Join Button with Tracking Function -->
+        <button class="task-button" style="background-color: #E2F516; color: black;" id="JoinButton-task1" 
                 onclick="completeTaskWithTracking('task1', 'https://youtube.com')">
-            Start
+            Join
         </button>
 
         <!-- Task Completed Checkmark -->
@@ -282,10 +266,10 @@
             </div>
         </div>
 
-        <!-- Start Button with Tracking Function -->
-        <button class="task-button" style="background-color: #E2F516; color: black;" id="startButton-task2" 
+        <!-- Join Button with Tracking Function -->
+        <button class="task-button" style="background-color: #E2F516; color: black;" id="JoinButton-task2" 
                 onclick="completeTaskWithTracking('task2', 'https://t.me/sirepaw')">
-            Start
+            Join
         </button>
 
         <!-- Task Completed Checkmark -->
@@ -303,12 +287,12 @@
 
         // Simulate the tracking of user joining the channel
         setTimeout(function () {
-            // Hide the Start button for the specific task
-            const startButton = document.getElementById(`startButton-${taskId}`);
+            // Hide the Join button for the specific task
+            const JoinButton = document.getElementById(`JoinButton-${taskId}`);
             const taskCompleted = document.getElementById(`taskCompleted-${taskId}`);
 
-            if (startButton && taskCompleted) {
-                startButton.style.display = 'none'; // Hide the Start button
+            if (JoinButton && taskCompleted) {
+                JoinButton.style.display = 'none'; // Hide the Join button
                 taskCompleted.style.display = 'inline'; // Show the checkmark
                 taskCompleted.innerHTML = '<i class="fas fa-check-circle"></i>';
             } else {
