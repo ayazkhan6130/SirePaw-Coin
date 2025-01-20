@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Data</title>
+</head>
+<body>
+    <h2>Users Data</h2>
+    <div id="userTable"></div>
+
+    <script>
+        async function renderUserTable() {
+            let response = await fetch('user_data.json');
+            let data = await response.json();
+            
+            let table = "<table border='1'><tr><th>User Name</th><th>Country</th><th>Tasks Completed</th></tr>";
+            for (let user in data) {
+                table += `<tr>
+                    <td>${data[user].user_name}</td>
+                    <td>${data[user].country}</td>
+                    <td>${data[user].completed_tasks}</td>
+                </tr>`;
+            }
+            table += "</table>";
+            document.getElementById("userTable").innerHTML = table;
+        }
+
+        renderUserTable();
+    </script>
+</body>
+</html>
